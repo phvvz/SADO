@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--metatextblock-->
-        <title>Sado—апартаменты в городе Москва. Бронь от 2-х часов</title>
+        <title></title>
         <meta name="description" content="Это лучше, чем БДСМ-отель. Заходите сами, чтобы убедиться в этом. Скидка на 1-е посещение!" />
         <meta property="og:url" content="https://sadostudio.ru" />
         <meta property="og:title" content="Sado—апартаменты в СПБ. Бронь от 2-х часов" />
@@ -177,8 +177,44 @@
         
             // Отображаем сообщение с текущим городом
             function showCityMessage(city) {
-                const title = document.querySelector("title");
-                title.textContent = `Sado—апартаменты в городе ${city}. Бронь от 2-х часов`;
+                switch(city) {
+                    case 'Москва':
+                        window.location.href = "https://moscow" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Санкт-петербург':
+                        window.location.href = "https://saint-petersburg" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Сочи':
+                        window.location.href = "https://sochi" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Краснодар':
+                        window.location.href = "https://krasnodar" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Симферополь':
+                        window.location.href = "https://simferopol" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Керчь':
+                        window.location.href = "https://kerch" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Евпатория':
+                        window.location.href = "https://evpatoria" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Ялта':
+                        window.location.href = "https://yalta" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Феодосия':
+                        window.location.href = "https://feodosia" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Новосибирск':
+                        window.location.href = "https://novosibirsk" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Екатеринбург':
+                        window.location.href = "https://yekaterinburg" + window.location.hostname.replace('www', '');
+                        break;
+                    case 'Волгоград':
+                        window.location.href = "https://volgograd" + window.location.hostname.replace('www', '');
+                        break;
+                }
             }
         
             // Обновляем город в локальном хранилище при выборе пользователем
@@ -195,7 +231,6 @@
                         city = await getUserCity();
                     } catch (error) {
                         city = 'Москва';  // значение по умолчанию в случае ошибки
-                        location.reload();
                     }
                 }
                 showCityMessage(city);
@@ -210,7 +245,6 @@
                 localStorage.setItem('userCity', city);
                 toggleCityList();
                 showCityMessage(city);
-                location.reload();
             }
         
             document.addEventListener('click', function(event) {
@@ -222,7 +256,7 @@
             });
         </script>
     </head>
-    <body class="t-body" style="margin: 0;">
+    <body class="t-body" style="margin: 0;overflow-x: hidden;">
         <!--allrecords-->
         <div
             id="allrecords"
@@ -1475,7 +1509,7 @@
                             data-field-top-res-960-value="78"
                             data-field-left-res-960-value="388"
                         >
-                            <a class="tn-atom" href="https://api.whatsapp.com/send?phone=79817450019" target="_blank">
+                            <a class="tn-atom" href="form-1.html" target="_blank">
                                 <img class="tn-atom__img t-img" data-original="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png" alt="" imgfield="tn_img_1625322102444" />
                             </a>
                         </div>
@@ -2833,7 +2867,7 @@
                             data-field-top-res-960-value="53"
                             data-field-left-res-960-value="-32"
                         >
-                            <div class="tn-atom" field="tn_text_1625322022784" style="left: 190px; position: absolute;">
+                            <div class="tn-atom" field="tn_text_1625322022784" style="left: 190px !important; position: absolute;width: 120px;">
                                 <a
                                     href="index.html#ig"
                                     style="
@@ -3090,7 +3124,7 @@
                             data-field-left-res-960-value="453"
                             data-field-width-res-960-value="28"
                         >
-                            <a class="tn-atom" href="https://api.whatsapp.com/send?phone=79817450019" target="_blank">
+                            <a class="tn-atom" href="form-1.html" target="_blank">
                                 <img class="tn-atom__img t-img" data-original="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png" alt="" imgfield="tn_img_1625322102444" />
                             </a>
                         </div>
@@ -11668,7 +11702,7 @@
                             data-field-top-res-960-value="823"
                             data-field-left-res-960-value="590"
                         >
-                            <a class="tn-atom" target="_blank" href="form-2.html">ЗАБРОНИРОВАТЬ</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">ЗАБРОНИРОВАТЬ</a>
                         </div>
                         <div
                             class="t396__elem tn-elem tn-elem__3256717251617659568607 t-animate"
@@ -13410,7 +13444,7 @@
                             data-field-top-res-960-value="625"
                             data-field-left-res-960-value="10"
                         >
-                            <a class="tn-atom" target="_blank" href="form-3.html">ЗАБРОНИРОВАТЬ</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">ЗАБРОНИРОВАТЬ</a>
                         </div>
                         <div
                             class="t396__elem tn-elem tn-elem__4004241221617578969758 t-animate"
@@ -14593,7 +14627,7 @@
             <div id="rec359760861" class="r t-rec" style="" data-animationappear="off" data-record-type="898">
                 <div class="t898 t898_animate" style="">
                     <div class="t898__wrapper" style="">
-                        <a class="tn-atom" href="https://api.whatsapp.com/send?phone=79817450019" target="_blank">
+                        <a class="tn-atom" href="form-1.html" target="_blank">
                             <img class="tn-atom__img t-img" data-original="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png" alt="" imgfield="tn_img_1625322102444" style="width: 60px; height: 60px" />
                         </a>
                         <span class="t898__hint t-name t-name_xs">Задайте вопрос в телеграм</span>
@@ -17196,7 +17230,7 @@
                             data-field-top-res-960-value="491"
                             data-field-left-res-960-value="13"
                         >
-                            <a class="tn-atom" target="_blank" href="form-4.html">ЗАБРОНИРОВАТЬ</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">ЗАБРОНИРОВАТЬ</a>
                         </div>
                         <div
                             class="t396__elem tn-elem tn-elem__3009735861617744669191"
@@ -17312,7 +17346,7 @@
                             data-field-top-res-960-value="491"
                             data-field-left-res-960-value="540"
                         >
-                            <a class="tn-atom" target="_blank" href="form-5.html">ЗАБРОНИРОВАТЬ</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">ЗАБРОНИРОВАТЬ</a>
                         </div>
                         <div
                             class="t396__elem tn-elem tn-elem__3009735861617744669228"
@@ -18921,7 +18955,7 @@
                             data-field-left-res-960-value="141"
                             data-field-width-res-960-value="150"
                         >
-                            <a class="tn-atom" target="_blank" href="form-6.html">Сообщу в чате</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">Сообщу в чате</a>
                         </div>
                     </div>
                 </div>
@@ -20501,7 +20535,7 @@
                             data-field-top-res-960-value="742"
                             data-field-left-res-960-value="10"
                         >
-                            <a class="tn-atom" target="_blank" href="form-8.html">ЗАКАЗАТЬ</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">ЗАКАЗАТЬ</a>
                         </div>
                         <div
                             class="t396__elem tn-elem tn-elem__5124641511618767745447"
@@ -20688,7 +20722,7 @@
                             data-field-top-res-960-value="431"
                             data-field-left-res-960-value="410"
                         >
-                            <a class="tn-atom" target="_blank" href="form-7.html">ЗАКАЗАТЬ</a>
+                            <a class="tn-atom" target="_blank" href="form-1.html">ЗАКАЗАТЬ</a>
                         </div>
                         <div
                             class="t396__elem tn-elem tn-elem__5124641511618767745452"
